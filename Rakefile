@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "linoleum_scopes"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "human-readable, dynamic and handy time/date based scoping for your models"
     gem.email = "mcroeder@gmail.com"
     gem.homepage = "http://github.com/donkeyhighway/linoleum_scopes"
     gem.authors = ["donkeyhighway"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.files = %w(MIT-LICENSE README.textile Rakefile) + Dir.glob("{rails,lib,generators,spec}/**/*")
+    gem.add_dependency 'rails', '= 3.0.0.beta'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
